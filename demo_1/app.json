@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/jump/jump",
+    "pages/favorites/favorites",
+    "pages/select/select",
+    "pages/department/department",
+    "pages/others/others",
+    "pages/users/users",
+    "pages/save/save"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "GlobalHead",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/i0.png",
+        "selectedIconPath": "images/i1.png"
+      },
+      {
+        "pagePath": "pages/department/department",
+        "iconPath": "images/s0.png",
+        "selectedIconPath": "images/s1.png"
+      },
+      {
+        "pagePath": "pages/favorites/favorites",
+        "iconPath": "images/f0.png",
+        "selectedIconPath": "images/f1.png"
+      },
+      {
+        "pagePath": "pages/users/users",
+        "iconPath": "images/u0.png",
+        "selectedIconPath": "images/u1.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "connectSocket": 3000,
+    "uploadFile": 3000,
+    "downloadFile": 3000
+  },
+  "debug": true
+}

@@ -1,0 +1,103 @@
+<!--pages/favorites/favorites.wxml-->
+<view class='card'>
+  <view class='title-top'>最佳匹配</view>
+  <view class='pic'>
+    <image src='https://i.loli.net/2018/11/28/5bfe8e47984ba.png' style='width: 160px; height:140px '></image></view>
+  <view class='merchInfor-head' >
+    <view class='brand'>{{best.name}}</view>
+    <view class='price'>￥{{best.price}}</view>
+  </view>
+  <view class='card-tail'>
+    <view class="table">
+        <block >
+        <view class="tr">
+          <view class="td-1">CPU</view>
+          <view class="td-2">{{best.cpu}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">显卡</view>
+          <view class="td-2">{{best.xkname}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">内存</view>
+          <view class="td-2">{{best.mem}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">硬盘</view>          
+          <view class="td-2">{{best.disk}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">系统</view>          
+          <view class="td-2">{{best.os}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">重量</view>          
+          <view class="td-2">{{best.weight}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">屏幕尺寸</view>          
+          <view class="td-2">{{best.screensize}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">最大待机时长</view>          
+          <view class="td-2">{{best.workingtime}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">补充</view>          
+          <view class="td-2">{{best.xktype}}</view>
+        </view>
+        </block>
+      </view>
+  </view>
+</view>
+<view class='card'>
+  <view class='title-sec'>其他推荐</view>
+  
+  <view class='merchInfor' wx:for="{{list}}">
+    <view class='merchInfor-head'>
+    <view class='brand'>{{item.name}}</view>
+    <view class='price'>￥{{item.price}}</view></view>
+  <view class='card-tail'>
+    <view class="table">
+        <block wx:key="{{id}}">
+        <view class="tr">
+          <view class="td-1">CPU</view>
+          <view class="td-2">{{item.cpu}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">显卡</view>
+          <view class="td-2">{{item.xkname}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">内存</view>
+          <view class="td-2">{{item.mem}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">硬盘</view>          
+          <view class="td-2">{{item.disk}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">系统</view>          
+          <view class="td-2">{{item.os}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">重量</view>          
+          <view class="td-2">{{item.weight}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">屏幕尺寸</view>          
+          <view class="td-2">{{item.screensize}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">最大待机时长</view>          
+          <view class="td-2">{{item.workingtime}}</view>
+        </view>
+        <view class='tr'>
+          <view class="td-1">补充</view>          
+          <view class="td-2">{{item.xktype}}</view>
+        </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

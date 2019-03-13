@@ -1,0 +1,6 @@
+<!--pages/jump/jump.wxml-->
+<view class='btn'>
+<button bindtap="goToPage1">page1-专业</button>
+<button bindtap="goToPage2">page2-类型</button>
+<button bindtap="goToPage3">page3-参数</button>
+</view>

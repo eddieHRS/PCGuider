@@ -1,0 +1,53 @@
+.title {
+  font-size: 25rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+}
+.detail {
+  margin: 10rpx auto;
+  font-size: 25rpx;
+  line-height: 40rpx;
+  text-indent: 2em;
+}
+.icon-xiajiantou:after {
+  font-family:"iconfont" !important;
+  content: '\e733';
+  font-size: 40rpx;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-decoration: none;
+  right: 10rpx;
+}
+.icon-shangjiantou:after {
+  font-family:"iconfont" !important;
+  content: '\e734';
+  font-size: 40rpx;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-decoration: none;
+  right: 10rpx;
+}
+radio .wx-radio-input{
+border-radius: 3rpx;
+height: 24rpx;
+width: 24rpx;
+margin-top: -4rpx;
+}
+radio .wx-radio-input.wx-radio-input-checked::before{
+background-color: #000;
+}
+.btn {
+  margin: 25rpx;
+}
+button {
+  color: #fff;
+  border-radius: 0;
+  background-color: #000;
+}

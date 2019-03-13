@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class='blackBG'>
+  <view wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> </view>
+  <block wx:else>
+      <view class="userinfo">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+  </block>
+  <view class='back'></view> 
+</view>
+<view class='card'>
+<view class='card-2' bindtap="goToPage1">
+<image src='https://i.loli.net/2018/11/29/5bfffc2754857.png' style='width: 20px; height: 20px'></image>
+开始搜索
+</view>
+<view class='card-2' bindtap="goToPage2">
+<image src='https://i.loli.net/2018/11/29/5bfffbf20c674.png' style='width: 20px; height: 20px'>step</image>
+我的收藏/历史纪录
+</view>
+<view class='card-2' bindtap="goToPage3">
+<image src='https://i.loli.net/2018/11/29/5bfffbd5ae934.png' style='width: 20px; height: 20px'>step</image>
+个人中心
+</view>
+<text>\r\t\r\t\r\t\r\tmore>></text>
+</view>
+<view class='text-2'>
+  <text>☆欢迎使用本程序☆</text>
+  <text>我们会根据您的选择偏好</text>
+  <text>为您生成10个最适智能推荐</text>
+</view>

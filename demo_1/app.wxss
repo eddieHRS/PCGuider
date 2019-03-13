@@ -1,0 +1,155 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.blackBG {
+  align-items: center;
+  font-size: 28rpx;
+  padding-top: 60rpx;
+  padding-bottom: 20rpx;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  background-clip: padding-box;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+/**icon**/
+@font-face {
+ font-family: 'iconfont'; /* project id 518032 */
+ src: url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.eot');
+ src: url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.eot?#iefix') format('embedded-opentype'),
+ url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.woff') format('woff'),
+ url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.ttf') format('truetype'),
+ url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.svg#iconfont') format('svg');
+}
+.iconfont {
+ font-family:"iconfont" !important;
+ font-size:60rpx;
+ font-style:normal;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+.icon-zhiding:before{content: '\e739';}
+.icon-zuojiantou:before{content: '\e736';}
+.icon-youjiantou:before{content: '\e735';}
+.icon-shangjiantou:before{content: '\e734';}
+.icon-xiajiantou1:before{content: '\e733';}
+.icon-xiajiantou:before{content: '\e6cc';}
+.icon-gengduotianchong:before{content: '\e67f';}
+.icon-erweima:before{content: '\e65f';}
+.icon-fenleiorguangchangorqita:before{content: '\e64f';}
+.icon-dibiao:before{content: '\e64d';}
+.icon-bangzhu:before{content: '\e64a';}
+.icon-xinfeng:before{content: '\e640';}
+.icon-duihuaxinxi:before{content: '\e639';}
+.icon-sousuo:before{content: '\e62f';}
+.icon-shouye:before{content: '\e62d';}
+.icon-shezhi:before{content: '\e62a';}
+.icon-shanchu:before{content: '\e629';}
+.icon-dianhua:before{content: '\e61b';}
+/**icon-change**/
+
+.icon-xiajiantou:after {
+  font-family:"iconfont" !important;
+  content: '\e733';
+  font-size: 40rpx;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-decoration: none;
+  right: 10rpx;
+}
+.icon-shangjiantou:after {
+  font-family:"iconfont" !important;
+  content: '\e734';
+  font-size: 40rpx;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-decoration: none;
+  right: 10rpx;
+}
+/**card-view**/
+.card{
+  align-items: center;
+  padding: 20rpx;
+  font-size: 28rpx;
+  position: relative;
+  overflow: hidden;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #fff;
+  background-clip: padding-box;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+.title{
+  color: #868686;
+}
+.card-title{
+  margin-left: 0px;
+  margin-right: 0px;
+  align-items: center;
+  padding: 20rpx;
+  font-size: 20rpx;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  background-color:#c8c7cc92;
+  background-clip: padding-box;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+  text-align: center;
+}
+.card-tail{
+  padding: 0 5px;
+  line-height: 60rpx;
+  font-size: 20rpx;
+  position: relative;
+  color:#c8c7cc;
+  border-top: 1px solid #c8c7cc;
+}
+/**table**/
+.table {
+  line-height: 60rpx;
+  font-size: 20rpx;
+  position: relative;
+  color:#c8c7cc;
+  border: 0px solid darkgray;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  height: 40rpx;
+}
+.td {
+    width:40%;
+    text-align: left;
+    padding-top: 15rpx;
+}
+.td-pic {
+    width:100%;
+    text-align: left;
+    padding-top: 15rpx;
+}
+.th {
+  width: 40%;
+  justify-content: center;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}
+.tui-content{
+  height: 100%;
+  padding: 10px;
+}

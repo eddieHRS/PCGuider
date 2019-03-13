@@ -1,0 +1,50 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 35rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  margin: 20rpx;
+  color: #ddd;
+  font-size: 40rpx;
+}
+
+.back{
+  padding: 60rpx;
+  align-self: center;
+    background: url('https://s1.ax2x.com/2018/11/29/5Y0YhX.png');
+    background-size: 90% 110%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.card-2 {
+  width: 90%;
+  height: 80rpx;
+  padding: 5%;
+  align-items: center;
+  font-size: 28rpx;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 1px solid #f0f0f0;
+}
+.text-2 {
+  margin: 6%;
+  color:#c2c2c2;
+  font-size: 24rpx;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,15 @@
+/* pages/others/others.wxss */
+.tui-slider-head,.tui-slider-box,.checkbox{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  color: #666;
+}
+.btn {
+  margin: 25rpx;
+}
+button {
+  color: #fff;
+  border-radius: 0;
+  background-color: #000;
+}

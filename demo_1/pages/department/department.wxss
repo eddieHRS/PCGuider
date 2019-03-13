@@ -1,0 +1,52 @@
+/* pages/department/department.wxss */
+page { background-color: #fff; }
+.tui-picker-content{
+  padding: 30rpx;
+  text-align: center;
+  color: #000;
+}
+.tui-picker-name{
+  font-size: 35rpx;
+  height: 40rpx;
+  line-height: 10rpx;
+  border-bottom: 1px solid #c8c7cc;
+  margin-bottom: 5px;
+}
+.tui-picker-detail{
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #fff;
+  font-size: 30rpx;
+  padding: 0 20px;
+  overflow: hidden;
+  border: 1px solid #c8c7cc;
+}
+.card {
+  line-height: 280rpx;
+  text-align: center;
+}
+.btn {
+  margin: 25rpx;
+}
+button {
+  color: #fff;
+  border-radius: 0;
+  background-color: #000;
+}
+.td-pic {
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}
+.aniShow {
+  animation: a 8s ease-in-out infinite;
+}
+@keyframes a {
+  40% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}

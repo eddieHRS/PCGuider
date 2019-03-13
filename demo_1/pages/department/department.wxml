@@ -1,0 +1,41 @@
+<!--pages/department/department.wxml-->
+<view class='card'>
+<view class='card-tail'></view>
+<view class="tui-picker-content">
+  <view class="tui-picker-name">选择你的专业</view>
+  <picker bindchange="changeDepartment"  value="{{departmentIndex}}" range="{{departmentList}}">
+    <view class="tui-picker-detail">{{departmentList[departmentIndex]}}</view>
+  </picker>  
+</view>
+</view>
+<view class='card' style='height: 200px' wx:if="{{departmentIndex==0}}" >
+ <view class='aniShow'>
+   <view class='td-pic' style='height:80px'>
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c00070808104.png'></image>\r\t\r\t\r\t
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c0006b6248d2.png'></image>\r\t\r\t\r\t
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c0006c0a8bf7.png'></image>\r\t\r\t\r\t
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c0006c23828f.png'></image></view>
+   <view class='td-pic' style='height:80px'>
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c0006b615f3b.png'></image>\r\t\r\t\r\t
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c0006c3b03f2.png'></image>\r\t\r\t\r\t
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c0007de635db.png'></image>\r\t\r\t\r\t
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c0006c9b863d.png'></image></view>
+ </view>
+</view>
+<view class='card' wx:if="{{departmentIndex==1}}">
+ <view class='aniShow'>
+   <view class='td-pic' style='height:80px'>
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c00080a8c998.png'></image>\r\t\r\t\r\t
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c0006272a588.png'></image>\r\t\r\t\r\t
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c00080a25691.png'></image>\r\t\r\t\r\t
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c00060a148e5.png'></image></view>
+   <view class='td-pic' style='height:80px'>
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c0004ee64370.png'></image>\r\t\r\t\r\t
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c0004f1d233f.png'></image>\r\t\r\t\r\t
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c0004f37a002.png'></image>\r\t\r\t\r\t
+   <image style="width: 65px; height: 65px" src='https://i.loli.net/2018/11/29/5c0006041a4b5.png'></image></view>
+ </view>
+</view>
+<view class='btn'>
+<button form-type='submit' bindtap="goToPage">下一步</button>
+</view>

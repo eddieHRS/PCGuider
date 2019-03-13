@@ -1,0 +1,111 @@
+<!--pages/select/select.wxml-->
+<view class='card-title'> 
+  <text wx:if="{{radioFlag != ' '}}">你已选择：{{radioFlag}}</text>
+</view>
+<radio-group class='radio-group' bindchange='radioChange'>
+<view class='card'>
+  <radio value='office'  checked="{{item.checked}}"/><text>办公家用</text>
+  <view class='card-tail'>
+   <view class='title'>示例应用</view>
+   <view class='td-pic'>
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c000f08cbe33.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c000f0970bd3.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c000f0980028.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c000f09ead14.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c000f9f4175a.png'></image></view>
+  </view>
+  <view class='card-tail' data-index='1' catchtap='panel'>
+    <view class='title'>展开查看配置列表<icon class="{{showIndex == 1 ? 'icon-shangjiantou':'icon-xiajiantou'}}"></icon></view>
+    <view class='detail' wx:if="{{showIndex == 1}}">
+      <view class="table">
+        <block wx:for="{{listData}}" wx:key="{{preference}}">
+        <view class="tr">
+          <view class="td">{{item.preference}}</view>
+          <view class="td">{{item.lv1}}</view>
+        </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='card'>
+  <radio value='design' checked="{{item.checked}}"/><text>设计开发</text>
+  <view class='card-tail'>
+   <view class='title'>示例应用</view>
+   <view class='td-pic'>
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c000fe4ac6db.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c000fe3cee89.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c000fe2e0000.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c000fe60e236.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c000fe718fa2.png'></image></view>
+  </view>
+   <view class='card-tail' data-index='2' catchtap='panel'>
+    <view class='title'>展开查看配置列表<icon class="{{showIndex == 2 ? 'icon-shangjiantou':'icon-xiajiantou'}}"></icon></view>
+    <view class='detail' wx:if="{{showIndex == 2}}">
+    <view class="table">
+        <block wx:for="{{listData}}" wx:key="{{preference}}">
+        <view class="tr">
+          <view class="td">{{item.preference}}</view>
+          <view class="td">{{item.lv2}}</view>
+        </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='card'>
+  <radio value='entertain'  checked="{{item.checked}}"/><text>游戏娱乐</text>
+  <view class='card-tail'>
+   <view class='title'>示例应用</view>
+   <view class='td-pic'>
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c0010815c556.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c00108168925.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c001083744da.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c0010844c820.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c0010ca7aa31.png'></image></view>
+  </view>
+  <view class='card-tail' data-index='3' catchtap='panel'>
+  <view class='title'>展开查看配置列表<icon class="{{showIndex == 3 ? 'icon-shangjiantou':'icon-xiajiantou'}}"></icon></view>
+    <view class='detail' wx:if="{{showIndex == 3}}">
+    <view class="table">
+        <block wx:for="{{listData}}" wx:key="{{preference}}">
+        <view class="tr">
+          <view class="td">{{item.preference}}</view>
+          <view class="td">{{item.lv3}}</view>
+        </view>
+        </block>
+      </view>
+      </view>
+  </view>
+</view>
+<view class='card'>
+  <radio value='game'  checked="{{item.checked}}"/><text>专业游戏</text>
+  <view class='card-tail'>
+   <view class='title'>示例应用</view>
+   <view class='td-pic'>
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c0010ee97cfd.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c0010eec4e96.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c0010f3e15b7.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c0010f53eab0.png'></image>\r\t\r\t\r\t
+   <image style="width: 40px; height: 40px" src='https://i.loli.net/2018/11/30/5c001137dad3b.png'></image></view>
+  </view>
+  <view class='card-tail' data-index='4' catchtap='panel'>
+  <view class='title'>展开查看配置列表<icon class="{{showIndex == 4 ? 'icon-shangjiantou':'icon-xiajiantou'}}"></icon></view>
+    <view class='detail' wx:if="{{showIndex == 4}}">
+    <view class="table">
+        <block wx:for="{{listData}}" wx:key="{{preference}}">
+        <view class="tr">
+          <view class="td">{{item.preference}}</view>
+          <view class="td">{{item.lv4}}</view>
+        </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+</radio-group>
+<view class='btn'>
+<button style='submit' bindtap="goToPage" >下一步</button>
+</view>
+
